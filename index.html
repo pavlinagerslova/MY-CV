@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="cs" data-theme="system">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Životopis Mgr. Pavlína Geršlová</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <header class="site-header">
+            <div class="brand">
+                <h1>Mgr. Pavlína Geršlová</h1>
+                <p class="role">Junior Frontend Developer</p>
+            </div>
+            <nav class="tabs" role="tablist" aria-label="Resume sections">
+                <button role="tab" aria-selected="true" aria-controls="tab-main" id="tab-main-btn" data-tab="main"
+                    tabindex="0">O mně</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-school" id="tab-school-btn"
+                    data-tab="school" tabindex="0">Vzdělání</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-work" id="tab-work-btn" data-tab="work"
+                    tabindex="-1">Pracovní zkušenosti</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-skills-btn"
+                    data-tab="skills" tabindex="-1">Znalosti a dovednosti</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-projects" id="tab-projects-btn"
+                    data-tab="projects" tabindex="-1">Kurzy a projekty</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-interests" id="tab-interests-btn"
+                    data-tab="interests" tabindex="-1">Zájmy</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-contact" id="tab-contact-btn"
+                    data-tab="contact" tabindex="-1">Kontakt</button>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section id="tab-main" role="tabpanel" aria-labelledby="tab-main-btn">
+                <h2>O mně</h2>
+                <article class="card">
+                    <p class="meta">Tady bude nějaký text o mně.</p>
+                </article>
+            </section>
+
+            <section id="tab-school" role="tabpanel" aria-labelledby="tab-school-btn" hidden>
+                <h2>Vzdělání</h2>
+                <article class="card">
+                    <h3>Aplikovaná fyzika (Mgr.) - Univerzita Palackého v Olomouci</h3>
+                    <p class="meta">2014 — 2016</p>
+                    <p>Diplomová práce: Fyzikální měření se systémem NI myRIO - Vývoj softwaru v LabVIEW pro správu
+                        měření,
+                        zálohování dat a vyhodnocení experimentů.</p>
+                </article>
+                <article class="card">
+                    <h3>Přístrojová fyzika (Bc.) - Univerzita Palackého v Olomouci</h3>
+                    <p class="meta">2011 — 2014</p>
+                    <p>Bakalářská práce: Programování sbRIO robota v prostředí LabVIEW Robotics.</p>
+                </article>
+            </section>
+
+            <section id="tab-work" role="tabpanel" aria-labelledby="tab-work-btn" hidden>
+                <h2>Pracovní zkušenosti</h2>
+                <article class="card">
+                    <h3>Galileo Corporation s.r.o. — Junior Frontend Developer</h3>
+                    <p class="meta">2023 — 2026</p>
+                    <ul>
+                        <li>Samostatná realizace desítek webových prezentací podle grafických návrhů v Adobe XD a Figmě
+                            (HTML, CSS, JS).</li>
+                        <li>Implementace uživatelského rozhraní pro desítky kiosků.</li>
+                        <li>Hromadná oprava chyby napříč stovkami webů včetně práce se serverovým přístupem.</li>
+                        <li>Úpravy a optimalizace stávajících projektů.</li>
+                        <li>Vývoj menších funkcionalit v JavaScriptu.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Meopta s.r.o. — Vývojová technoložka</h3>
+                    <p class="meta">2017 — 2026</p>
+                    <ul>
+                        <li>Vedení výzkumného projektu zaměřeného namultisenzorické a hyperspektrální zobrazovací
+                            systémy
+                            (MWIR, LWIR).</li>
+                        <li>Návrh a realizace tenkých vrstev pro infračervenou oblast spektra.</li>
+                        <li>Studium odborných rešerší a aplikace získaných poznatků do výzkumného procesu.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="tab-projects" role="tabpanel" aria-labelledby="tab-projects-btn" hidden>
+                <h2>Kurzy a projekty</h2>
+                <div class="grid">
+                    <div class="card small">
+                        <h4>Czechitas kurzy</h4>
+                        <p>Staň se kodérkou, JavaScript, React</p>
+                        <p>Během svého pobytu doma s dětmi jsem se nudila (vtip) a řekla jsem si, že se naučím
+                            programovat.
+                            V rámci kurzu "Staň se kodérkou" jsem se naučila základy HTML, CSS a JavaScriptu. V rámci
+                            kurzu
+                            "JavaScript" jsem se naučila pracovat s proměnnými, funkcemi, objekty a polemi. V rámci
+                            kurzu
+                            "React" jsem se naučila vytvářet jednoduché webové aplikace. Nutno ovšem dodat, že od
+                            Reactího
+                            kurzu již uběhla nějaká doba a já bohužel neměla dostatek volného prostoru se v tomto ohledu
+                            rozvíjet. To se ale nyní snažím napravit.</p>
+                    </div>
+                    <div class="card small">
+                        <h4>Projekt - Garden log</h4>
+                        <p>Aplikace pro správu roslin. Snažím se vytvořit malý projekt, na kterém bych se naučila
+                            vytvářet
+                            jednoduché webové aplikace. Chci se naučit pracovat s Typescriptem a Reactem. Pracuji s
+                            chatGPT
+                            a github copilotem. Cesta je to zatím velmi trnitá a většinu práce zatím dělá AI, ale věřím
+                            tomu, že mám vůli i schopnosti se stál fullstack vývojářkou.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-interests" role="tabpanel" aria-labelledby="tab-interests-btn" hidden>
+                <h2>Zájmy</h2>
+                <ul>
+                    <li>Zahrada, nebo spíše malé arboretum. Na ploše téměř 1400 m² se snažím (teda, nejsem na to sama)
+                        vytvořit doslova malé arboretum. Rozmanité, ale přece takové, aby zapadlo do zdejší přírody.
+                        Takže
+                        žádná velká exotika. A taky se tu lecos dá jíst, a to od května až téměř do listopadu. Nemám
+                        ráda
+                        zahrady, kde je jen trávník. Taková zahrada nežije. V naší zahradě bydlí žáby, ještěrky, hadi,
+                        ježci, veverky a spousta zajímahého hmyzu. A když se zrovna nepracuje, tak se tu náramně
+                        odpočívá.
+                    </li>
+                    <li>Knihy a hry. Miluji dobře napsané příběhy. Aneb.. “I have lived a thousand lives and I’ve loved
+                        s
+                        thousand loves. I’ve walked on distant worlds and seen the end of time. Because I read.” ―
+                        George
+                        R.R. Martin </li>
+                    <li>Kempování. Nebo prostě bytí venku. Miluji hory a lesy a to, když prostě můžu být v přírodě.
+                        Nejlépe
+                        s dvěma psími pošuky. Zatím nejkrásněji mi bylo pod stanem v Lofotech. Nádhera..</li>
+                </ul>
+            </section>
+
+            <section id="tab-contact" role="tabpanel" aria-labelledby="tab-contact-btn" hidden>
+                <h2>Kontakt</h2>
+                <p>Email: <a href="mailto:pavlinagerslova@seznam.cz">pavlinagerslova@seznam.cz</a></p>
+                <p>Telefon: <a href="tel:+420732214962">+420 731 214 962</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/pavlinagerslova/">Profil</a></p>
+            </section>
+        </main>
+
+        <div class="theme-switch" aria-label="Theme">
+            <button type="button" data-theme="light" aria-pressed="false">Světle</button>
+            <button type="button" data-theme="dark" aria-pressed="false">Tmavě</button>
+            <button type="button" data-theme="system" aria-pressed="false">Systém</button>
+        </div>
+
+        <script src="script.js" type="module"></script>
+    </div>
+</body>
+
+</html>

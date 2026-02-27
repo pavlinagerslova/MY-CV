@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-family: "macho";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body-container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 40px 20px;
+  border-radius: 20px;
+  color: #333;
+  border: 3px solid #333;
+  line-height: 1.5;
+  transition: 0.4s all ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+.container--wide {
+  max-width: 1600px;
+}
+.container--wideXL {
+  max-width: 1720px;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+html[data-theme=light] .body-container {
+  background: radial-gradient(circle 476px at 54.8% 250px, rgb(244, 244, 254) 0%, rgb(168, 229, 253) 42.3%, rgb(168, 229, 253) 100.2%);
+  color: #333;
+}
+
+html[data-theme=dark] .body-container {
+  background: #333;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-theme=system] .body-container {
+    background: radial-gradient(circle 476px at 54.8% 250px, rgb(244, 244, 254) 0%, rgb(168, 229, 253) 42.3%, rgb(168, 229, 253) 100.2%);
+    color: #333;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=system] .body-container {
+    background: #333;
+    color: #fff;
+  }
+}/*# sourceMappingURL=style.css.map */
