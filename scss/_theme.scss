@@ -1,0 +1,21 @@
+@use "variables" as var;
+
+html[data-theme="light"],
+html[data-theme="system"] {
+  @media (prefers-color-scheme: light) {
+    .body-container {
+      background: #fff;
+      color: #333;
+    }
+  }
+}
+
+html[data-theme="dark"],
+html[data-theme="system"] {
+  @media (prefers-color-scheme: dark) {
+    .body-container {
+      background: #333;
+      color: #fff;
+    }
+  }
+}
