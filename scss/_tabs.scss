@@ -10,7 +10,7 @@
   background: var(--color-glass);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  transition: background 0.18s ease, box-shadow 0.18s ease;
+  transition: all 0.18s ease;
   flex-wrap: wrap;
   box-shadow: 3px 3px 6px 6px rgb(var(--color-accent-rgb) / 0.06);
 

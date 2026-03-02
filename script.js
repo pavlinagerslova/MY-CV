@@ -1,4 +1,4 @@
-// Robust accessible tabs with debug logs
+//  Accessible tabs
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
     const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
@@ -100,3 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//Display image in its own size
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.images img');
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            const src = img.getAttribute('src');
+            const alt = img.getAttribute('alt') || '';
+            const newWindow = window.open(src, '_blank');
+            if (newWindow) {
+                newWindow.document.title = alt;
+            }
+        });
+    });
+});

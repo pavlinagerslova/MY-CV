@@ -1,0 +1,41 @@
+#tab-interests {
+  .interests {
+    .images {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      img {
+        flex: 1 1 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: var(--radius);
+        box-shadow: var(--box-shadow-accent);
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media screen and (min-width: 768px) {
+          flex: 1 1 calc(50% - 20px);
+          max-width: calc(50% - 20px);
+        }
+
+        @media screen and (min-width: 1024px) {
+          flex: 1 1 calc(25% - 20px);
+          max-width: calc(25% - 20px);
+        }
+        @media screen and (min-width: 1280px) {
+          &:hover {
+            transform: scale(175%);
+            z-index: 1;
+            box-shadow: var(--box-shadow-accent-hover);
+          }
+        }
+      }
+    }
+  }
+}

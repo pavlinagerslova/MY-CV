@@ -16,17 +16,11 @@ html {
 .body-container {
   width: 99%;
   text-align: center;
+  position: relative;
   max-width: 1024px;
-  margin: 100px auto 0 auto;
+  margin: 50px auto 50px auto;
   padding: 40px 20px;
   border-radius: 20px;
-  //   background: radial-gradient(
-  //     circle 476px at 54.8% 250px,
-  //     rgba(168, 229, 253, 1) 0%,
-  //     rgba(244, 244, 254, 1) 42.3%,
-  //     rgba(244, 244, 254, 1) 100.2%
-  //   );
-  color: #333;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
   line-height: 1.5;
   transition: 0.4s all ease;
@@ -47,8 +41,35 @@ html {
 
 .nav {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-item {
   list-style: none;
+
+  &::before {
+    content: "";
+    background: var(--color-accent);
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  &--big::before {
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem auto 0.5rem auto;
+    display: block;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
 }

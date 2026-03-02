@@ -1,0 +1,13 @@
+#tab-main {
+  img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--radius);
+    object-fit: contain;
+    object-position: top;
+    margin-bottom: 20px;
+    float: left;
+    margin: 20px;
+  }
+}
