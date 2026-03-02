@@ -100,17 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//Display image in its own size
-document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.images img');
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            const src = img.getAttribute('src');
-            const alt = img.getAttribute('alt') || '';
-            const newWindow = window.open(src, '_blank');
-            if (newWindow) {
-                newWindow.document.title = alt;
-            }
-        });
-    });
-});
+// //Display image in its own size
+// document.addEventListener('DOMContentLoaded', () => {
+//     const images = document.querySelectorAll('.images img');
+//     images.forEach(img => {
+//         img.addEventListener('click', () => {
+//             const src = img.getAttribute('src');
+//             const alt = img.getAttribute('alt') || '';
+//             const newWindow = window.open(src, '_blank');
+//             if (newWindow) {
+//                 newWindow.document.title = alt;
+//             }
+//         });
+//     });
+// });

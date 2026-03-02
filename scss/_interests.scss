@@ -15,9 +15,9 @@
         box-shadow: var(--box-shadow-accent);
         transition: all 0.3s ease;
 
-        &:hover {
-          cursor: pointer;
-        }
+        // &:hover {
+        //   cursor: pointer;
+        // }
 
         @media screen and (min-width: 768px) {
           flex: 1 1 calc(50% - 20px);

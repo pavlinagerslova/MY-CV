@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   float: left;
   margin: 20px;
+  background: #fcf8f8;
 }
 
 :root {
@@ -90,6 +91,10 @@ html {
   max-width: 1720px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .nav {
   padding: 0;
   display: flex;
@@ -137,9 +142,6 @@ a:hover {
   box-shadow: var(--box-shadow-accent);
   transition: all 0.3s ease;
 }
-#tab-interests .interests .images img:hover {
-  cursor: pointer;
-}
 @media screen and (min-width: 768px) {
   #tab-interests .interests .images img {
     flex: 1 1 calc(50% - 20px);
@@ -170,6 +172,7 @@ a:hover {
   display: block;
   width: 90%;
   margin: 8px auto;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
   height: 30px;
   border-radius: var(--radius);
   background: rgb(var(--color-accent-rgb)/0.25);
