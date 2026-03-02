@@ -95,6 +95,10 @@ html {
   text-align: justify;
 }
 
+.card {
+  margin-bottom: 50px;
+}
+
 .nav {
   padding: 0;
   display: flex;
@@ -167,7 +171,7 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-#tab-skills .grid .card h4::after {
+#tab-skills .grid .card-small h4::after {
   content: "";
   display: block;
   width: 90%;
@@ -177,27 +181,27 @@ a:hover {
   border-radius: var(--radius);
   background: rgb(var(--color-accent-rgb)/0.25);
 }
-#tab-skills .grid .card:nth-child(1) h4::after {
+#tab-skills .grid .card-small:nth-child(1) h4::after {
   background: linear-gradient(to right, var(--color-accent) 90%, rgb(var(--color-accent-rgb)/0.25) 90%);
 }
-#tab-skills .grid .card:nth-child(2) h4::after {
+#tab-skills .grid .card-small:nth-child(2) h4::after {
   background: linear-gradient(to right, var(--color-accent) 90%, rgb(var(--color-accent-rgb)/0.25) 90%);
 }
-#tab-skills .grid .card:nth-child(3) h4::after {
+#tab-skills .grid .card-small:nth-child(3) h4::after {
   background: linear-gradient(to right, var(--color-accent) 75%, rgb(var(--color-accent-rgb)/0.25) 75%);
 }
-#tab-skills .grid .card:nth-child(4) h4::after {
+#tab-skills .grid .card-small:nth-child(4) h4::after {
   background: linear-gradient(to right, var(--color-accent) 40%, rgb(var(--color-accent-rgb)/0.25) 40%);
 }
-#tab-skills .grid .card:nth-child(5) h4::after {
+#tab-skills .grid .card-small:nth-child(5) h4::after {
   background: linear-gradient(to right, var(--color-accent) 15%, rgb(var(--color-accent-rgb)/0.25) 15%);
 }
-#tab-skills .grid .card:nth-child(6) h4::after {
+#tab-skills .grid .card-small:nth-child(6) h4::after {
   content: "B2+";
   line-height: 30px;
   background: linear-gradient(to right, var(--color-accent) 85%, rgb(var(--color-accent-rgb)/0.25) 85%);
 }
-#tab-skills .grid .card:nth-child(7) h4::after {
+#tab-skills .grid .card-small:nth-child(7) h4::after {
   content: "B1";
   line-height: 30px;
   background: linear-gradient(to right, var(--color-accent) 50%, rgb(var(--color-accent-rgb)/0.25) 50%);
