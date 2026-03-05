@@ -1,0 +1,17 @@
+@use "variables" as var;
+
+html[lang="cs"] {
+  .lang-link--cs {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+}
+
+html[lang="en"] {
+  .lang-link--en {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+}

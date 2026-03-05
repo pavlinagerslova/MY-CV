@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume Mgr. Pavlína Geršlová</title>
+
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme') || 'system';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="alternate" hreflang="cs" href="index.html">
+    <link rel="alternate" hreflang="en" href="indexEN.html">
+</head>
+
+<body>
+    <div class="body-container">
+        <header class="site-header">
+            <div class="brand">
+                <h1>Mgr. Pavlína Geršlová</h1>
+                <p class="role">Junior Frontend Developer</p>
+            </div>
+
+            <nav class="tabs" role="tablist" aria-label="Resume sections">
+                <button role="tab" aria-selected="true" aria-controls="tab-main" id="tab-main-btn" data-tab="main"
+                    tabindex="0">About Me</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-school" id="tab-school-btn"
+                    data-tab="school" tabindex="-1">Education</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-work" id="tab-work-btn" data-tab="work"
+                    tabindex="-1">Work Experience</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-skills-btn"
+                    data-tab="skills" tabindex="-1">Skills</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-projects" id="tab-projects-btn"
+                    data-tab="projects" tabindex="-1">Courses & Projects</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-interests" id="tab-interests-btn"
+                    data-tab="interests" tabindex="-1">Interests</button>
+                <button role="tab" aria-selected="false" aria-controls="tab-contact" id="tab-contact-btn"
+                    data-tab="contact" tabindex="-1">Contact</button>
+            </nav>
+        </header>
+
+        <main class="container">
+
+            <!-- ABOUT -->
+            <section id="tab-main" role="tabpanel" aria-labelledby="tab-main-btn">
+                <h2>About Me</h2>
+                <article class="card">
+                    <img src="images/myPhoto.png" alt="Profile photo of Pavlína Geršlová" class="profile-photo">
+
+                    <p class="meta text-justify">
+                        Hi! My name is Pavlína and I am currently looking for a job. Preferably a good job. 🙃
+                    </p>
+
+                    <p class="meta text-justify">
+                        I have been working remotely as a coder / junior frontend developer.
+                        I enjoyed the role, but I would like to move further towards actual development.
+                        I am confident in HTML and CSS, I use Sass, Bootstrap, Gulp, Git and Figma,
+                        and I am gradually learning to work with Docker.
+                        My JavaScript skills are solid, although we are still getting to know each other better.
+                        I have completed several courses, built small features and continue to learn and improve.
+                        I have also taken a React course – I understand the fundamentals and how it works,
+                        and I see it as the next step I am actively working on.
+                    </p>
+
+                    <p class="meta text-justify">
+                        I am looking for a position where I can work with JavaScript regularly –
+                        ideally daily or at least weekly.
+                        Homework assignments are great, but nothing teaches you more than real-world projects.
+                        When it comes to learning, I am like a sponge – I absorb new information quickly and genuinely
+                        enjoy it.
+                        I also have programming experience from university, where I worked with Matlab and LabVIEW.
+                    </p>
+
+                    <p class="meta text-justify">
+                        In summary, I am looking for a junior frontend or fullstack developer position.
+                        I would highly appreciate the possibility of remote work.
+                        I enjoy a calm work environment (although I can work in a noisy one too –
+                        singing "Let It Go" with Elsa while coding is not a problem for me). I appreciate the
+                        possibility to pet my dogs or check my beutiful garden while working.
+                        I value quality, smart solutions and efficiency.
+                        If there is a simpler way to solve something, I like to find it.
+                        I always aim for the best possible outcome rather than “just making it work.”
+                        I believe I have strong critical thinking and a practical mindset.
+                    </p>
+
+                    <p class="meta text-justify">
+                        If you are looking for a new team member with practical frontend experience,
+                        who is motivated to grow and improve both herself and her surroundings,
+                        I would be happy to hear from you.
+                    </p>
+
+                    <p class="meta text-justify">
+                        Thank you sincerely for your time and have a wonderful day!
+                    </p>
+                </article>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="tab-school" role="tabpanel" aria-labelledby="tab-school-btn" hidden>
+                <h2>Education</h2>
+                <article class="card">
+                    <p class="meta text-justify">
+                        I completed both my Bachelor's and Master's degrees at Palacký University in Olomouc.
+                        I earned a Bachelor's degree in Instrumentation Physics and a Master's degree in Applied
+                        Physics.
+                        The Department of Physics was a great environment – we were a small group,
+                        which made it friendly and supportive, not only among students but also from the lecturers.
+
+                        During my studies, I had the opportunity to try many different things.
+                        I designed and soldered printed circuit boards, worked with oscilloscopes,
+                        solved (sometimes quite painful) integrals, and analyzed electrical circuits.
+                        It was a combination of theory and practice – and that was exactly what I enjoyed the most.
+                        It was never just about calculating something, but about truly understanding how things work
+                        and how to actually build or measure them.
+
+                        Over time, I realized that what I enjoyed most of all was programming.
+                        And especially programming in LabVIEW.
+                        That is why I decided to dedicate my Master's thesis to this field.
+                        It was there that I first truly immersed myself in application logic –
+                        not just “writing some code,” but designing how an application should function as a whole.
+                        That was one of the key moments that gradually led me to pursue a career in software
+                        development.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>Applied Physics (Mgr.)</h3>
+                    <h4>Palacký University Olomouc</h4>
+                    <p class="meta">2014 — 2016</p>
+                    <p>
+                        Thesis: Physical measurements using NI myRIO –
+                        Development of LabVIEW software for measurement management,
+                        data backup and experiment evaluation.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Instrumentation Physics (Bc.)</h3>
+                    <h4>Palacký University Olomouc</h4>
+                    <p class="meta">2011 — 2014</p>
+                    <p>
+                        Thesis: Programming an sbRIO robot in LabVIEW Robotics.
+                    </p>
+                </article>
+            </section>
+
+            <!-- WORK -->
+            <section id="tab-work" role="tabpanel" aria-labelledby="tab-work-btn" hidden>
+                <h2>Work Experience</h2>
+
+                <article class="card">
+                    <h3>Galileo Corporation s.r.o. — Junior Frontend Developer</h3>
+                    <p class="meta">2023 — 2026</p>
+                    <ul class="nav">
+                        <li class="nav-item">Independent implementation of dozens of websites based on Adobe XD and
+                            Figma designs (HTML, CSS, JS).</li>
+                        <li class="nav-item">User interface implementation for multiple kiosks.</li>
+                        <li class="nav-item">Bulk bug fixing across hundreds of websites including server access work.
+                        </li>
+                        <li class="nav-item">Project optimization and adjustments.</li>
+                        <li class="nav-item">Development of smaller JavaScript features.</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Meopta s.r.o. — Development Technologist</h3>
+                    <p class="meta">2017 — 2026</p>
+                    <ul class="nav">
+                        <li class="nav-item">Leading a research project focused on multisensor and hyperspectral imaging
+                            systems (MWIR, LWIR).</li>
+                        <li class="nav-item">Design and implementation of thin films for infrared spectrum.</li>
+                        <li class="nav-item">Research studies and application of findings into development processes.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="tab-skills" role="tabpanel" aria-labelledby="tab-skills-btn" hidden>
+                <h2>Skills</h2>
+                <div class="grid">
+                    <div class="card-small">
+                        <h4>MS Office</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>HTML, CSS</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>Git, Sass, Gulp, Adobe XD, Figma</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>React, LabVIEW</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>English</h4>
+                    </div>
+                    <div class="card-small">
+                        <h4>German</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-projects" role="tabpanel" aria-labelledby="tab-projects-btn" hidden>
+                <h2>Courses & Projects</h2>
+                <div>
+                    <div class="card">
+                        <h4>Czechitas Courses</h4>
+                        <p>Become a Coder, JavaScript, React</p>
+                        <p class="text-justify">
+                            During my time at home with my children I was so bored (joke),
+                            I decided it was the perfect opportunity to learn something new.
+                            I have always been drawn to technical and logical challenges, so programming
+                            felt like a natural choice.
+
+                            In the “Become a Coder” course, I learned the fundamentals of HTML, CSS and JavaScript.
+                            The JavaScript course helped me understand variables, functions, objects and arrays in
+                            depth.
+                            This was followed by a React course, where I built simple web applications.
+
+                            To be honest, some time has passed since then and I haven’t had as much
+                            opportunity to work with React as I would like.
+                            I understand the fundamentals and core concepts,
+                            but I am currently focusing on gaining more hands-on experience
+                            and strengthening my practical skills.
+                            I see this as a challenge and an opportunity to move forward again.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h4>Project – Garden Log</h4>
+                        <p class="text-justify">
+                            I am also working on my own small project – a plant management application.
+                            It serves as my personal playground where I learn to build web applications
+                            from initial idea and design to a working solution.
+                            My goal is to become confident in TypeScript and React,
+                            while gradually understanding the broader fullstack context.
+
+                            Honestly? It is sometimes a challenging journey.
+                            There are moments when the application seems to grow faster than my understanding.
+                            I use tools like ChatGPT and GitHub Copilot to help guide me
+                            or overcome roadblocks.
+                            While AI can currently write parts of the code faster than I can,
+                            my goal is not just to “have it done.”
+                            I make sure I understand the logic, review the code,
+                            adjust it and fully grasp why it works the way it does.
+
+                            I treat this as a learning process.
+                            Every mistake, every bug and every “why on earth doesn’t this work”
+                            pushes me further.
+                            I believe I have the determination and persistence
+                            to gradually grow into a fullstack developer.
+                            I do not expect it to happen overnight,
+                            but I am ready to put in the work.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="tab-interests" role="tabpanel" aria-labelledby="tab-interests-btn" hidden>
+                <div class="interests">
+                    <h2>Interests</h2>
+                    <ul class="nav">
+                        <li class="nav-item nav-item--big text-justify">
+                            Garden. Or rather, a small arboretum.
+
+                            On an area of nearly 1,400 m², we (and luckily I’m not alone in this)
+                            are creating a space that is diverse, alive and natural – one that fits
+                            into the surrounding landscape. No flashy exotic plants.
+                            Instead, a thoughtful mix of trees, shrubs and perennials that make sense
+                            here and now.
+
+                            Edible shrubs, fruit trees, herbs and lesser-known species.
+                            From May almost until November, there is always something to taste.
+                            I love when a garden is not just something to look at,
+                            but something that gives back.
+
+                            I have never liked gardens with perfectly trimmed lawns only.
+                            To me, that feels a bit lifeless.
+                            In ours, frogs live here, lizards too, sometimes even a snake passes by.
+                            Hedgehogs wander through in the evening, squirrels run across the trees,
+                            and the insect world could fill a whole chapter on its own.
+                            It is a joy to observe.
+
+                            And when I’m not weeding, planting or pruning,
+                            it becomes the perfect place to rest.
+                            Sitting down with a coffee, looking around,
+                            and simply being for a while.
+                        </li>
+
+                        <li class="nav-item nav-item--big text-justify">
+                            Books and games.
+
+                            I love well-written stories.
+                            The kind that absorb you so completely that you lose track of time.
+                            I am drawn to worlds with depth,
+                            characters that are not simply black and white,
+                            and stories that stay with me long after I finish them.
+
+                            As George R. R. Martin said:
+
+                            “I have lived a thousand lives and I’ve loved a thousand loves.
+                            I’ve walked on distant worlds and seen the end of time.
+                            Because I read.”
+
+                            And that is exactly how I feel.
+                            Through books (and games as well),
+                            I have walked through hundreds of different worlds,
+                            made difficult decisions, faced consequences,
+                            and explored unknown landscapes.
+                            A strong story – whether on paper or on a screen –
+                            has immense value to me.
+                        </li>
+
+                        <li class="nav-item nav-item--big text-justify">
+                            Camping. Or simply being outdoors.
+
+                            I love mountains and forests.
+                            In general, I am happiest when I can be in nature –
+                            without unnecessary rush or notifications.
+
+                            Ideally with my two slightly crazy dogs,
+                            who are excited about absolutely everything.
+                            Every pinecone is a discovery,
+                            every stream an adventure.
+                            Well… at least for one of them.
+                            For the other, water is pure horror.
+                            Thanks to them, I slow down
+                            and notice details I might otherwise miss.
+
+                            The most beautiful place I have ever camped
+                            was in the Lofoten Islands in Norway.
+                            There is something raw yet peaceful about that place.
+                            Mountains rising straight from the sea,
+                            endless light, and silence that is truly silent.
+                            Sitting in front of a tent in the evening,
+                            watching the horizon and knowing I don’t have to be anywhere else –
+                            that was one of those moments that stays with you deeply.
+                            Truly breathtaking. 🥹
+                        </li>
+                    </ul>
+                    <div class="images">
+                        <img src="images/garden.jpg" alt="Zahrada">
+                        <img src="images/books.jpg" alt="Knihy">
+                        <img src="images/dogs.jpg" alt="Psi">
+                        <img src="images/Lofoten.jpeg" alt="Lofoty">
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="tab-contact" role="tabpanel" aria-labelledby="tab-contact-btn" hidden>
+                <h2>Contact</h2>
+                <p>Address: Podolí, Bouzov, Czech Republic</p>
+                <p>Email: <a href="mailto:pavlinagerslova@seznam.cz">pavlinagerslova@seznam.cz</a></p>
+                <p>Phone: <a href="tel:+420732214962">+420 731 214 962</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/pavlinagerslova/" target="_blank">Profile</a></p>
+                <p>GitHub: <a href="https://github.com/pavlinagerslova" target="_blank">Profile</a></p>
+            </section>
+
+        </main>
+
+
+        <div class="theme-switch" aria-label="Theme">
+            <button type="button" class="button-light" data-theme="light" aria-pressed="false">Light</button>
+            <button type="button" class="button-dark" data-theme="dark" aria-pressed="false">Dark</button>
+            <button type="button" class="button-system" data-theme="system" aria-pressed="false">System</button>
+        </div>
+
+        <div class="lang-switch">
+            <a href="index.html" class="lang-link lang-link--cs" lang="cs">CZ</a> |
+            <a href="indexEN.html" class="lang-link lang-link--en" lang="en">EN</a>
+        </div>
+
+        <script src="script.js" type="module"></script>
+    </div>
+</body>
+
+</html>
