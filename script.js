@@ -1,3 +1,4 @@
+// Tabs 
 document.addEventListener('DOMContentLoaded', () => {
 
     const tabs = [...document.querySelectorAll('[role="tab"]')];
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    // inicializace z hash
+    // Activate tab from hash
     const hash = location.hash.replace('#', '');
 
     const initialTab =
